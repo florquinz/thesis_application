@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/app_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Homepage.MainActivity">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchViewAnimalNumber"
+        style="@style/SearchViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/bg_btn2"
+        android:focusable="false"
+        android:padding="10dp"
+        app:closeIcon="@drawable/ic_baseline_clear_24"
+        app:iconifiedByDefault="false"
+        app:queryHint="Search animal number here..."
+        app:searchHintIcon="@null"
+        app:searchIcon="@drawable/ic_baseline_search_24" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recAnimalNumber"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searchViewAnimalNumber"
+        android:layout_marginTop="15dp"
+        android:padding="10dp" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/addAnimalTreatment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/recAnimalNumber"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/add_btn" />
+
+</RelativeLayout>

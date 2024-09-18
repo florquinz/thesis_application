@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "817964910663",
+    "project_id": "pcctreatmentrecord",
+    "storage_bucket": "pcctreatmentrecord.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:817964910663:android:c9a2b660d1f6729ac48962",
+        "android_client_info": {
+          "package_name": "com.example.thesisapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBh98ZSwrfFxB-r9BF_VpuAPVGncH-qPH4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/recCardTreatment"
+    android:layout_margin="20dp"
+    app:cardCornerRadius="12dp"
+    android:backgroundTint="@color/Ivory"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:padding="5dp"
+            android:text="Time: "
+            android:textAlignment="textStart"
+            android:textColor="@color/Black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cardTime"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.095" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:padding="5dp"
+            android:text="Observations: "
+            android:textAlignment="textStart"
+            android:textColor="@color/Black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cardObservations"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:padding="5dp"
+            android:text="Treatment: "
+            android:textAlignment="textStart"
+            android:textColor="@color/Black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cardTreatment"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:padding="5sp"
+            android:text="Remarks: "
+            android:textAlignment="textStart"
+            android:textColor="@color/Black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cardRemarks"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintVertical_bias="0.142" />
+
+        <TextView
+            android:id="@+id/cardTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="120dp"
+            android:padding="5dp"
+            android:text="0000-0000-0000-0000"
+            android:textAlignment="center"
+            android:textColor="@color/Black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.095" />
+
+        <TextView
+            android:id="@+id/cardObservations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="120dp"
+            android:padding="5dp"
+            android:text="0000-0000-0000-0000"
+            android:textAlignment="center"
+            android:textColor="@color/Black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardTime"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/cardTreatment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="120dp"
+            android:padding="5dp"
+            android:text="0000-0000-0000-0000"
+            android:textAlignment="center"
+            android:textColor="@color/Black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardObservations"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/cardRemarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="120dp"
+            android:padding="5dp"
+            android:text="0000-0000-0000-0000"
+            android:textAlignment="center"
+            android:textColor="@color/Black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardTreatment"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

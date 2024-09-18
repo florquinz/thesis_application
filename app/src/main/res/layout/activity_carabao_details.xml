@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/app_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Homepage.CarabaoDetails">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchViewDate"
+        style="@style/SearchViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/bg_btn2"
+        android:focusable="false"
+        android:padding="10dp"
+        app:closeIcon="@drawable/ic_baseline_clear_24"
+        app:iconifiedByDefault="false"
+        app:queryHint="Search treatment records..."
+        app:searchHintIcon="@null"
+        app:searchIcon="@drawable/ic_baseline_search_24" />
+
+    <TextView
+        android:id="@+id/txtviewAnimalNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchViewDate"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:text="Animal Number / ID"
+        android:textColor="@color/Black"
+        android:textSize="20sp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recAnimalDetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtviewAnimalNumber"
+        android:layout_marginTop="15dp"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/recAnimalDetails"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/trackPedoData"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:padding="2dp"
+            android:text="Track Pedometer Data"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/addnNewTreatment"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:padding="2dp"
+            android:text="Add New Treatment"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

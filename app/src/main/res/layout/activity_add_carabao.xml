@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/app_bg"
+    android:fillViewport="true"
+    android:id="@+id/main"
+    tools:context=".Homepage.AddCarabao"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="120dp"
+            android:text="ANIMAL DETAILS"
+            android:textColor="@color/Black"
+            android:textSize="20sp" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="70sp"
+            android:layout_marginEnd="15sp"
+            android:hint="Animal Number / ID"
+            android:padding="2dp"
+            android:textColorHint="@color/Gray"
+            app:boxStrokeColor="@color/Black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/animalID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn1"
+                android:backgroundTint="@color/White"
+                android:textColor="@color/Black"
+                android:textColorHint="@color/Black"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="207dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="15sp"
+            android:hint="Observation/s"
+            android:padding="2dp"
+            android:textColorHint="@color/Gray"
+            app:boxStrokeColor="@color/Black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Observations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn1"
+                android:backgroundTint="@color/White"
+                android:textColor="@color/Black"
+                android:textColorHint="@color/Black"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="207dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="15sp"
+            android:hint="Treatment"
+            android:padding="2dp"
+            android:textColorHint="@color/Gray"
+            app:boxStrokeColor="@color/Black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Treatment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn1"
+                android:backgroundTint="@color/White"
+                android:textColor="@color/Black"
+                android:textColorHint="@color/Black"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="207dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="15sp"
+            android:hint="Time"
+            android:padding="2dp"
+            android:textColorHint="@color/Gray"
+            app:boxStrokeColor="@color/Black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn1"
+                android:backgroundTint="@color/White"
+                android:textColor="@color/Black"
+                android:textColorHint="@color/Black"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="207dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="15sp"
+            android:hint="Remark"
+            android:padding="2dp"
+            android:textColorHint="@color/Gray"
+            app:boxStrokeColor="@color/Black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn1"
+                android:backgroundTint="@color/White"
+                android:textColor="@color/Black"
+                android:textColorHint="@color/Black"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="207dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/addCarabaoBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:backgroundTint="@color/MediumSlateBlue"
+            android:padding="5dp"
+            android:text="SUBMIT"
+            android:textColor="@color/White"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+</ScrollView>
